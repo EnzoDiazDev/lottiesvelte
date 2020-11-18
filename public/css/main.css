@@ -1,0 +1,49 @@
+/* :root {
+} */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden !important;
+	scroll-behavior: smooth;
+}
+
+body {
+	color: #333;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/* HELPERS */
+.non-selectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+} /* Desactiva la seleccion de un elemento */
+.non-clickable { pointer-events: none } /* Desactiva los pointer-events de un elemento */
+.material-icons { font-family: 'Material Icons' !important } /* Asigna la fuente a los iconos */
+.lighter { font-weight: lighter !important } /* Cambia el grosor de la fuete a ligter */
+.toUpperCase { text-transform: uppercase } /* Transforma el texto en mayúsculas */
+h1, h2, h3, h4, h5, h6 { transition: font-size 0.05s } /* Añade una pequeña transición a los cambios de tamaño de los titulos */
+input[type="text"] + label { pointer-events: none } /* Corrige un defecto en los inputs de MaterializeCSS */
+
+/* MAIN */
+
+
+/* @MEDIA SCREEN */
+@media only screen and (max-width: 601px){
+    .s0 { display: none } /* Oculta el elemento en S */
+}
+
+@media only screen and (max-width: 993px){ 
+    .m0 { display: none } /* Oculta el elemento en M */
+}
